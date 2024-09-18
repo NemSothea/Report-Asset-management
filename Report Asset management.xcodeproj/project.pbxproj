@@ -7,18 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16843CE22C9A82B1001AEF6E /* AccoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CE12C9A82B1001AEF6E /* AccoutType.swift */; };
+		16843CE42C9A836C001AEF6E /* AnnotatedCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CE32C9A836C001AEF6E /* AnnotatedCircleView.swift */; };
+		16843CE72C9A8437001AEF6E /* CustomDonutChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CE62C9A8437001AEF6E /* CustomDonutChartView.swift */; };
+		16843CE92C9A84AE001AEF6E /* AssetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CE82C9A84AE001AEF6E /* AssetListView.swift */; };
+		16843CEE2C9A86D6001AEF6E /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CED2C9A86D6001AEF6E /* ScanView.swift */; };
+		16843CF02C9A887C001AEF6E /* DefaultDonutChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CEF2C9A887C001AEF6E /* DefaultDonutChartView.swift */; };
 		169FEB0F2C97BC330009AA91 /* Report_Asset_managementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FEB0E2C97BC330009AA91 /* Report_Asset_managementApp.swift */; };
 		169FEB112C97BC330009AA91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FEB102C97BC330009AA91 /* ContentView.swift */; };
 		169FEB132C97BC340009AA91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169FEB122C97BC340009AA91 /* Assets.xcassets */; };
 		169FEB162C97BC340009AA91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169FEB152C97BC340009AA91 /* Preview Assets.xcassets */; };
+		169FEB1D2C97BF540009AA91 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 169FEB1C2C97BF540009AA91 /* README.md */; };
+		169FEB202C97C0200009AA91 /* BookUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FEB1F2C97C0200009AA91 /* BookUsView.swift */; };
+		169FEB222C97C0330009AA91 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FEB212C97C0330009AA91 /* CardsView.swift */; };
+		169FEB242C97CF2D0009AA91 /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FEB232C97CF2D0009AA91 /* MyProfileView.swift */; };
+		169FEB272C97D2180009AA91 /* flow_Asset Report_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 169FEB262C97D2180009AA91 /* flow_Asset Report_image.jpeg */; };
+		169FEB2D2C97D47C0009AA91 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FEB2C2C97D47C0009AA91 /* MenuView.swift */; };
+		169FEB312C97ED390009AA91 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FEB302C97ED390009AA91 /* HeaderView.swift */; };
+		169FEB332C97ED900009AA91 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FEB322C97ED900009AA91 /* PieChartView.swift */; };
+		169FEB352C9834110009AA91 /* DonutChartSortedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FEB342C9834110009AA91 /* DonutChartSortedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16843CE12C9A82B1001AEF6E /* AccoutType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccoutType.swift; sourceTree = "<group>"; };
+		16843CE32C9A836C001AEF6E /* AnnotatedCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotatedCircleView.swift; sourceTree = "<group>"; };
+		16843CE62C9A8437001AEF6E /* CustomDonutChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDonutChartView.swift; sourceTree = "<group>"; };
+		16843CE82C9A84AE001AEF6E /* AssetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListView.swift; sourceTree = "<group>"; };
+		16843CED2C9A86D6001AEF6E /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		16843CEF2C9A887C001AEF6E /* DefaultDonutChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDonutChartView.swift; sourceTree = "<group>"; };
 		169FEB0B2C97BC330009AA91 /* Report Asset management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Report Asset management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		169FEB0E2C97BC330009AA91 /* Report_Asset_managementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report_Asset_managementApp.swift; sourceTree = "<group>"; };
 		169FEB102C97BC330009AA91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		169FEB122C97BC340009AA91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		169FEB152C97BC340009AA91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		169FEB1C2C97BF540009AA91 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		169FEB1F2C97C0200009AA91 /* BookUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookUsView.swift; sourceTree = "<group>"; };
+		169FEB212C97C0330009AA91 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
+		169FEB232C97CF2D0009AA91 /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
+		169FEB262C97D2180009AA91 /* flow_Asset Report_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "flow_Asset Report_image.jpeg"; sourceTree = "<group>"; };
+		169FEB2C2C97D47C0009AA91 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		169FEB302C97ED390009AA91 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		169FEB322C97ED900009AA91 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		169FEB342C9834110009AA91 /* DonutChartSortedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonutChartSortedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,9 +62,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16843CDF2C9A8262001AEF6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16843CE12C9A82B1001AEF6E /* AccoutType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		16843CE52C9A8375001AEF6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16843CE62C9A8437001AEF6E /* CustomDonutChartView.swift */,
+				16843CE82C9A84AE001AEF6E /* AssetListView.swift */,
+				16843CE32C9A836C001AEF6E /* AnnotatedCircleView.swift */,
+				169FEB302C97ED390009AA91 /* HeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16843CEA2C9A86AC001AEF6E /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				16843CEC2C9A86C7001AEF6E /* Model */,
+				16843CEB2C9A86B8001AEF6E /* View */,
+				16843CED2C9A86D6001AEF6E /* ScanView.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		16843CEB2C9A86B8001AEF6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16843CEC2C9A86C7001AEF6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		169FEB022C97BC330009AA91 = {
 			isa = PBXGroup;
 			children = (
+				169FEB1C2C97BF540009AA91 /* README.md */,
 				169FEB0D2C97BC330009AA91 /* Report Asset management */,
 				169FEB0C2C97BC330009AA91 /* Products */,
 			);
@@ -51,10 +125,18 @@
 		169FEB0D2C97BC330009AA91 /* Report Asset management */ = {
 			isa = PBXGroup;
 			children = (
+				16843CEA2C9A86AC001AEF6E /* Scan */,
+				169FEB2B2C97D4620009AA91 /* Menu */,
+				169FEB2A2C97D4430009AA91 /* BookUs */,
+				169FEB292C97D43C0009AA91 /* Cards */,
+				169FEB282C97D4310009AA91 /* Profile */,
+				169FEB1E2C97BF9D0009AA91 /* View */,
 				169FEB0E2C97BC330009AA91 /* Report_Asset_managementApp.swift */,
 				169FEB102C97BC330009AA91 /* ContentView.swift */,
+				169FEB252C97D1D40009AA91 /* Helper */,
 				169FEB122C97BC340009AA91 /* Assets.xcassets */,
 				169FEB142C97BC340009AA91 /* Preview Content */,
+				16DF95632C990DBD00D6DC1F /* TESTVIEW */,
 			);
 			path = "Report Asset management";
 			sourceTree = "<group>";
@@ -65,6 +147,65 @@
 				169FEB152C97BC340009AA91 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		169FEB1E2C97BF9D0009AA91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		169FEB252C97D1D40009AA91 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				169FEB262C97D2180009AA91 /* flow_Asset Report_image.jpeg */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		169FEB282C97D4310009AA91 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				169FEB232C97CF2D0009AA91 /* MyProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		169FEB292C97D43C0009AA91 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				169FEB212C97C0330009AA91 /* CardsView.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		169FEB2A2C97D4430009AA91 /* BookUs */ = {
+			isa = PBXGroup;
+			children = (
+				169FEB1F2C97C0200009AA91 /* BookUsView.swift */,
+			);
+			path = BookUs;
+			sourceTree = "<group>";
+		};
+		169FEB2B2C97D4620009AA91 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				16843CE52C9A8375001AEF6E /* View */,
+				16843CDF2C9A8262001AEF6E /* Model */,
+				169FEB2C2C97D47C0009AA91 /* MenuView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		16DF95632C990DBD00D6DC1F /* TESTVIEW */ = {
+			isa = PBXGroup;
+			children = (
+				169FEB342C9834110009AA91 /* DonutChartSortedView.swift */,
+				169FEB322C97ED900009AA91 /* PieChartView.swift */,
+				16843CEF2C9A887C001AEF6E /* DefaultDonutChartView.swift */,
+			);
+			path = TESTVIEW;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +266,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				169FEB1D2C97BF540009AA91 /* README.md in Resources */,
+				169FEB272C97D2180009AA91 /* flow_Asset Report_image.jpeg in Resources */,
 				169FEB162C97BC340009AA91 /* Preview Assets.xcassets in Resources */,
 				169FEB132C97BC340009AA91 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +280,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				169FEB332C97ED900009AA91 /* PieChartView.swift in Sources */,
+				169FEB242C97CF2D0009AA91 /* MyProfileView.swift in Sources */,
+				16843CEE2C9A86D6001AEF6E /* ScanView.swift in Sources */,
+				169FEB2D2C97D47C0009AA91 /* MenuView.swift in Sources */,
+				16843CE92C9A84AE001AEF6E /* AssetListView.swift in Sources */,
+				16843CE42C9A836C001AEF6E /* AnnotatedCircleView.swift in Sources */,
+				16843CE72C9A8437001AEF6E /* CustomDonutChartView.swift in Sources */,
+				169FEB202C97C0200009AA91 /* BookUsView.swift in Sources */,
+				169FEB352C9834110009AA91 /* DonutChartSortedView.swift in Sources */,
+				16843CF02C9A887C001AEF6E /* DefaultDonutChartView.swift in Sources */,
 				169FEB112C97BC330009AA91 /* ContentView.swift in Sources */,
+				169FEB222C97C0330009AA91 /* CardsView.swift in Sources */,
 				169FEB0F2C97BC330009AA91 /* Report_Asset_managementApp.swift in Sources */,
+				16843CE22C9A82B1001AEF6E /* AccoutType.swift in Sources */,
+				169FEB312C97ED390009AA91 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +436,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +466,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
