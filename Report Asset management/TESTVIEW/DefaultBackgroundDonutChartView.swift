@@ -10,13 +10,14 @@ import Charts
 
 
 // Donut chart view
-struct CustomDonutChartView: View {
+struct DefaultBackgroundDonutChartView: View {
     
-    var accountTypes                       = AccoutType.all
-    @State private var selectedCount    : Int?
-    @State private var selectedWineType : AccoutType?
+    var accountTypes                        = AccoutType.all
+    @State private var selectedCount        : Int?
+    @State private var selectedAccountType : AccoutType?
     
-    @State private var animationProgress: CGFloat = 0
+    @State private var animationProgress    : CGFloat = 0
+    
     let sortAccountTypes  = AccoutType.all.sorted { $0.reportRate > $1.reportRate }
     
     var body: some View {
@@ -30,25 +31,43 @@ struct CustomDonutChartView: View {
             Chart(accountTypes) { wineType in
                 SectorMark(
                     angle: .value("reportRate",  wineType.reportRate * Int(animationProgress)),
-                    innerRadius: .ratio(0.5),
-                    outerRadius: MarkDimension(floatLiteral: getOuterRadius(for: wineType)),
-                    angularInset: 0.2
+                    innerRadius: .ratio(0.6),
+                    outerRadius: MarkDimension(floatLiteral: getOuterRadius(for: wineType))
                 )
-              
+               
                 .foregroundStyle(wineType.color)
-                .cornerRadius(5)
-                .annotation(position: .overlay) {
-                    let xCase: CGFloat = positionXY(value: wineType.color).0
-                    let yCase: CGFloat = positionXY(value: wineType.color).1
-                    AnnotatedCircleView(wineType: wineType, isSelected: selectedWineType?.name == wineType.name)
-                        .offset(x: xCase, y: yCase)
-                    
-                }
+                
             }
-            .frame(height: 350)
+            .frame(width: 350,height: 350)
             .offset(y: -30.0)
             .chartAngleSelection(value: $selectedCount)
-           
+            
+            .chartBackground { _ in
+                let isLongLenght = selectedAccountType?.name.count ?? 0 > 20 ? true : false
+                
+                if let selectedAccountType {
+                    VStack(alignment:.center) {
+                      
+                        Text(isLongLenght ? "withdrawal savings".uppercased() : selectedAccountType.name.uppercased())
+                            .font(.system(size: 12))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                        Text("\(selectedAccountType.reportRate) %")
+                            .fontWeight(.bold)
+                            .foregroundStyle(.pink)
+                    }
+                    .offset(y: -20.0)
+                } else {
+                    VStack {
+                        Image(systemName: "accessibility.badge.arrow.up.right")
+                            .font(.largeTitle)
+                            .foregroundColor(.red)
+                        Text("Select a AccoutType")
+                            .font(.subheadline)
+                    }
+                    .offset(y: -40.0)
+                }
+            }
             .onChange(of: selectedCount) { oldValue, newValue in
                 if let newValue {
                     withAnimation {
@@ -56,6 +75,7 @@ struct CustomDonutChartView: View {
                     }
                 }
             }
+            
             .onAppear {
                 withAnimation(.easeOut(duration: 1.0)) {
                        animationProgress = 1.0
@@ -63,17 +83,22 @@ struct CustomDonutChartView: View {
             }
             .onDisappear {
                 animationProgress = 0
-                selectedWineType = nil
+                selectedAccountType = nil
             }
             // Legend for the donut chart
-            List(sortAccountTypes ) { item in
+           
+            List(sortAccountTypes) { item in
                 HStack {
                     Circle()
                         .fill(item.color)
                         .frame(width: 10, height: 10)
                     
-                    Text(item.text)
+                    Text(item.name)
                         .font(.subheadline)
+                    Spacer()
+                    Text("\(item.reportRate) %")
+                        .fontWeight(.bold)
+                        .foregroundStyle(item.color)
                 }
                 .padding(.vertical, 4)
             }
@@ -81,30 +106,16 @@ struct CustomDonutChartView: View {
             .frame(height: 220)
             .offset(y: -10.0)
         }
+        .padding()
     }
     
-    private func positionXY(value: Color) -> (CGFloat , CGFloat) {
-        switch value {
-        case .topup:
-            return (-30.0, 0.0)
-        case .deposit:
-            return (20.0, 10.0)
-        case .withdraw:
-            return (20.0, -15.0)
-        case .load:
-            return (-10.0, 20.0)
-        case .card:
-            return (10.0, 30.0)
-        default:
-            return (0.0, 0.0)
-        }
-    }
+   
     // Function to calculate the outer radius
     private func getOuterRadius(for wineType: AccoutType) -> CGFloat {
         let baseRadius: CGFloat     = 130
         let selectedRadius: CGFloat = 140
         
-        if selectedWineType?.name == wineType.name {
+        if selectedAccountType?.name == wineType.name {
             return selectedRadius
         } else {
             return baseRadius
@@ -113,10 +124,10 @@ struct CustomDonutChartView: View {
     private func getSelectedWineType(value: Int) {
           withAnimation(.easeInOut(duration: 0.3)) {
               var cumulativeTotal = 0
-              for wineType in accountTypes {
-                  cumulativeTotal += wineType.reportRate
+              for accountType in accountTypes {
+                  cumulativeTotal += accountType.reportRate
                   if value <= cumulativeTotal {
-                      selectedWineType = wineType
+                      selectedAccountType = accountType
                       break
                   }
               }
@@ -126,5 +137,5 @@ struct CustomDonutChartView: View {
 
 
 #Preview {
-    CustomDonutChartView()
+    DefaultBackgroundDonutChartView()
 }

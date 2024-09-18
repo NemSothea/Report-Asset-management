@@ -12,11 +12,13 @@ import Charts
 // Donut chart view
 struct DefaultDonutChartView: View {
     
-    var wineTypes                       = AccoutType.all
-    @State private var selectedCount    : Int?
-    @State private var selectedWineType : AccoutType?
+    var accountTypes                        = AccoutType.all
+    @State private var selectedCount        : Int?
+    @State private var selectedAccountType : AccoutType?
     
-    @State private var animationProgress: CGFloat = 0
+    @State private var animationProgress    : CGFloat = 0
+    
+    let sortAccountTypes  = AccoutType.all.sorted { $0.reportRate > $1.reportRate }
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -26,7 +28,7 @@ struct DefaultDonutChartView: View {
                 .padding(.top)
             
             // Donut Chart
-            Chart(wineTypes) { wineType in
+            Chart(accountTypes) { wineType in
                 SectorMark(
                     angle: .value("reportRate",  wineType.reportRate * Int(animationProgress)),
                     innerRadius: .ratio(0.5),
@@ -37,11 +39,9 @@ struct DefaultDonutChartView: View {
                 .foregroundStyle(wineType.color)
                 .cornerRadius(5)
                 .annotation(position: .overlay) {
-                    let xCase: CGFloat = positionXY(value: wineType.color).0
-                    let yCase: CGFloat = positionXY(value: wineType.color).1
-                    AnnotatedCircleView(wineType: wineType, isSelected: selectedWineType?.name == wineType.name)
-                        .offset(x: xCase, y: yCase)
-                    
+                    Text("\(wineType.reportRate) %")
+                        .bold()
+                        .foregroundStyle(.text)
                 }
             }
             .frame(height: 350)
@@ -55,6 +55,7 @@ struct DefaultDonutChartView: View {
                     }
                 }
             }
+            
             .onAppear {
                 withAnimation(.easeOut(duration: 1.0)) {
                        animationProgress = 1.0
@@ -62,10 +63,11 @@ struct DefaultDonutChartView: View {
             }
             .onDisappear {
                 animationProgress = 0
-                selectedWineType = nil
+                selectedAccountType = nil
             }
             // Legend for the donut chart
-            List(wineTypes) { item in
+           
+            List(sortAccountTypes) { item in
                 HStack {
                     Circle()
                         .fill(item.color)
@@ -73,6 +75,10 @@ struct DefaultDonutChartView: View {
                     
                     Text(item.name)
                         .font(.subheadline)
+                    Spacer()
+                    Text("\(item.reportRate) %")
+                        .fontWeight(.bold)
+                        .foregroundStyle(item.color)
                 }
                 .padding(.vertical, 4)
             }
@@ -80,30 +86,16 @@ struct DefaultDonutChartView: View {
             .frame(height: 220)
             .offset(y: -10.0)
         }
+        .padding()
     }
     
-    private func positionXY(value: Color) -> (CGFloat , CGFloat) {
-        switch value {
-        case .topup:
-            return (-30.0, 0.0)
-        case .deposit:
-            return (20.0, 10.0)
-        case .withdraw:
-            return (20.0, -15.0)
-        case .load:
-            return (-10.0, 20.0)
-        case .card:
-            return (10.0, 30.0)
-        default:
-            return (0.0, 0.0)
-        }
-    }
+   
     // Function to calculate the outer radius
     private func getOuterRadius(for wineType: AccoutType) -> CGFloat {
         let baseRadius: CGFloat     = 130
         let selectedRadius: CGFloat = 140
         
-        if selectedWineType?.name == wineType.name {
+        if selectedAccountType?.name == wineType.name {
             return selectedRadius
         } else {
             return baseRadius
@@ -112,10 +104,10 @@ struct DefaultDonutChartView: View {
     private func getSelectedWineType(value: Int) {
           withAnimation(.easeInOut(duration: 0.3)) {
               var cumulativeTotal = 0
-              for wineType in wineTypes {
-                  cumulativeTotal += wineType.reportRate
+              for accountType in accountTypes {
+                  cumulativeTotal += accountType.reportRate
                   if value <= cumulativeTotal {
-                      selectedWineType = wineType
+                      selectedAccountType = accountType
                       break
                   }
               }

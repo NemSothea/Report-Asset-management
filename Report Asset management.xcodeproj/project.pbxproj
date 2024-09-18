@@ -13,6 +13,7 @@
 		16843CE92C9A84AE001AEF6E /* AssetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CE82C9A84AE001AEF6E /* AssetListView.swift */; };
 		16843CEE2C9A86D6001AEF6E /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CED2C9A86D6001AEF6E /* ScanView.swift */; };
 		16843CF02C9A887C001AEF6E /* DefaultDonutChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CEF2C9A887C001AEF6E /* DefaultDonutChartView.swift */; };
+		16843CF22C9AB23D001AEF6E /* DefaultBackgroundDonutChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CF12C9AB23C001AEF6E /* DefaultBackgroundDonutChartView.swift */; };
 		169FEB0F2C97BC330009AA91 /* Report_Asset_managementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FEB0E2C97BC330009AA91 /* Report_Asset_managementApp.swift */; };
 		169FEB112C97BC330009AA91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FEB102C97BC330009AA91 /* ContentView.swift */; };
 		169FEB132C97BC340009AA91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169FEB122C97BC340009AA91 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		16843CE82C9A84AE001AEF6E /* AssetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListView.swift; sourceTree = "<group>"; };
 		16843CED2C9A86D6001AEF6E /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		16843CEF2C9A887C001AEF6E /* DefaultDonutChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDonutChartView.swift; sourceTree = "<group>"; };
+		16843CF12C9AB23C001AEF6E /* DefaultBackgroundDonutChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBackgroundDonutChartView.swift; sourceTree = "<group>"; };
 		169FEB0B2C97BC330009AA91 /* Report Asset management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Report Asset management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		169FEB0E2C97BC330009AA91 /* Report_Asset_managementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report_Asset_managementApp.swift; sourceTree = "<group>"; };
 		169FEB102C97BC330009AA91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			children = (
 				169FEB342C9834110009AA91 /* DonutChartSortedView.swift */,
 				169FEB322C97ED900009AA91 /* PieChartView.swift */,
+				16843CF12C9AB23C001AEF6E /* DefaultBackgroundDonutChartView.swift */,
 				16843CEF2C9A887C001AEF6E /* DefaultDonutChartView.swift */,
 			);
 			path = TESTVIEW;
@@ -284,6 +287,7 @@
 				169FEB242C97CF2D0009AA91 /* MyProfileView.swift in Sources */,
 				16843CEE2C9A86D6001AEF6E /* ScanView.swift in Sources */,
 				169FEB2D2C97D47C0009AA91 /* MenuView.swift in Sources */,
+				16843CF22C9AB23D001AEF6E /* DefaultBackgroundDonutChartView.swift in Sources */,
 				16843CE92C9A84AE001AEF6E /* AssetListView.swift in Sources */,
 				16843CE42C9A836C001AEF6E /* AnnotatedCircleView.swift in Sources */,
 				16843CE72C9A8437001AEF6E /* CustomDonutChartView.swift in Sources */,

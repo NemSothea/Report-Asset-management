@@ -14,13 +14,21 @@ struct MenuView: View {
         HeaderView()
          
         ScrollView {
-                VStack(spacing: 20) {
+                VStack(spacing: 20) { 
+                    // DefaultBackgroundDonutChartView
+#warning("TEST DefaultBackgroundDonutChartView")
+//                    DefaultBackgroundDonutChartView()
+                    
                     // Donut chart view
-                    CustomDonutChartView()
+//                    CustomDonutChartView()
+                    
+                    // DefaultDonutChartView
+                    #warning("TEST DefaultDonutChartView")
+                    DefaultDonutChartView()
                         .padding(.horizontal)
                         .background(
                             RoundedRectangle(cornerRadius: 10)
-                                .fill(Color.white)
+                                .fill(Color.tabBackground)
                                 .shadow(radius: 5)
                         )
                     
