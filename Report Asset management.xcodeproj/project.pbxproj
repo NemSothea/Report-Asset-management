@@ -12,8 +12,14 @@
 		16843CE72C9A8437001AEF6E /* CustomDonutChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CE62C9A8437001AEF6E /* CustomDonutChartView.swift */; };
 		16843CE92C9A84AE001AEF6E /* AssetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CE82C9A84AE001AEF6E /* AssetListView.swift */; };
 		16843CEE2C9A86D6001AEF6E /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CED2C9A86D6001AEF6E /* ScanView.swift */; };
-		16843CF02C9A887C001AEF6E /* DefaultDonutChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CEF2C9A887C001AEF6E /* DefaultDonutChartView.swift */; };
+		16843CF02C9A887C001AEF6E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CEF2C9A887C001AEF6E /* RootView.swift */; };
 		16843CF22C9AB23D001AEF6E /* DefaultBackgroundDonutChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CF12C9AB23C001AEF6E /* DefaultBackgroundDonutChartView.swift */; };
+		16843CF42C9AC570001AEF6E /* DefaultDonutChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CF32C9AC570001AEF6E /* DefaultDonutChartView.swift */; };
+		16843CF92C9ACEE4001AEF6E /* ContentView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CF82C9ACEE4001AEF6E /* ContentView1.swift */; };
+		16843D002C9AE6E7001AEF6E /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CFB2C9AE6E7001AEF6E /* CustomTabView.swift */; };
+		16843D012C9AE6E7001AEF6E /* TabBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CFC2C9AE6E7001AEF6E /* TabBottomView.swift */; };
+		16843D022C9AE6E7001AEF6E /* TabItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CFD2C9AE6E7001AEF6E /* TabItemData.swift */; };
+		16843D032C9AE6E7001AEF6E /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CFE2C9AE6E7001AEF6E /* TabItemView.swift */; };
 		169FEB0F2C97BC330009AA91 /* Report_Asset_managementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FEB0E2C97BC330009AA91 /* Report_Asset_managementApp.swift */; };
 		169FEB112C97BC330009AA91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FEB102C97BC330009AA91 /* ContentView.swift */; };
 		169FEB132C97BC340009AA91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169FEB122C97BC340009AA91 /* Assets.xcassets */; };
@@ -35,8 +41,14 @@
 		16843CE62C9A8437001AEF6E /* CustomDonutChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDonutChartView.swift; sourceTree = "<group>"; };
 		16843CE82C9A84AE001AEF6E /* AssetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListView.swift; sourceTree = "<group>"; };
 		16843CED2C9A86D6001AEF6E /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
-		16843CEF2C9A887C001AEF6E /* DefaultDonutChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDonutChartView.swift; sourceTree = "<group>"; };
+		16843CEF2C9A887C001AEF6E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		16843CF12C9AB23C001AEF6E /* DefaultBackgroundDonutChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBackgroundDonutChartView.swift; sourceTree = "<group>"; };
+		16843CF32C9AC570001AEF6E /* DefaultDonutChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDonutChartView.swift; sourceTree = "<group>"; };
+		16843CF82C9ACEE4001AEF6E /* ContentView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView1.swift; sourceTree = "<group>"; };
+		16843CFB2C9AE6E7001AEF6E /* CustomTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		16843CFC2C9AE6E7001AEF6E /* TabBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBottomView.swift; sourceTree = "<group>"; };
+		16843CFD2C9AE6E7001AEF6E /* TabItemData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemData.swift; sourceTree = "<group>"; };
+		16843CFE2C9AE6E7001AEF6E /* TabItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
 		169FEB0B2C97BC330009AA91 /* Report Asset management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Report Asset management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		169FEB0E2C97BC330009AA91 /* Report_Asset_managementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report_Asset_managementApp.swift; sourceTree = "<group>"; };
 		169FEB102C97BC330009AA91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +119,25 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		16843CFA2C9AE6B9001AEF6E /* Tabview */ = {
+			isa = PBXGroup;
+			children = (
+				16843CFF2C9AE6E7001AEF6E /* View */,
+			);
+			path = Tabview;
+			sourceTree = "<group>";
+		};
+		16843CFF2C9AE6E7001AEF6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16843CFB2C9AE6E7001AEF6E /* CustomTabView.swift */,
+				16843CFC2C9AE6E7001AEF6E /* TabBottomView.swift */,
+				16843CFD2C9AE6E7001AEF6E /* TabItemData.swift */,
+				16843CFE2C9AE6E7001AEF6E /* TabItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		169FEB022C97BC330009AA91 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +158,7 @@
 		169FEB0D2C97BC330009AA91 /* Report Asset management */ = {
 			isa = PBXGroup;
 			children = (
+				16843CFA2C9AE6B9001AEF6E /* Tabview */,
 				16843CEA2C9A86AC001AEF6E /* Scan */,
 				169FEB2B2C97D4620009AA91 /* Menu */,
 				169FEB2A2C97D4430009AA91 /* BookUs */,
@@ -206,7 +238,9 @@
 				169FEB342C9834110009AA91 /* DonutChartSortedView.swift */,
 				169FEB322C97ED900009AA91 /* PieChartView.swift */,
 				16843CF12C9AB23C001AEF6E /* DefaultBackgroundDonutChartView.swift */,
-				16843CEF2C9A887C001AEF6E /* DefaultDonutChartView.swift */,
+				16843CF32C9AC570001AEF6E /* DefaultDonutChartView.swift */,
+				16843CEF2C9A887C001AEF6E /* RootView.swift */,
+				16843CF82C9ACEE4001AEF6E /* ContentView1.swift */,
 			);
 			path = TESTVIEW;
 			sourceTree = "<group>";
@@ -283,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16843D022C9AE6E7001AEF6E /* TabItemData.swift in Sources */,
 				169FEB332C97ED900009AA91 /* PieChartView.swift in Sources */,
 				169FEB242C97CF2D0009AA91 /* MyProfileView.swift in Sources */,
 				16843CEE2C9A86D6001AEF6E /* ScanView.swift in Sources */,
@@ -290,14 +325,19 @@
 				16843CF22C9AB23D001AEF6E /* DefaultBackgroundDonutChartView.swift in Sources */,
 				16843CE92C9A84AE001AEF6E /* AssetListView.swift in Sources */,
 				16843CE42C9A836C001AEF6E /* AnnotatedCircleView.swift in Sources */,
+				16843D002C9AE6E7001AEF6E /* CustomTabView.swift in Sources */,
 				16843CE72C9A8437001AEF6E /* CustomDonutChartView.swift in Sources */,
 				169FEB202C97C0200009AA91 /* BookUsView.swift in Sources */,
 				169FEB352C9834110009AA91 /* DonutChartSortedView.swift in Sources */,
-				16843CF02C9A887C001AEF6E /* DefaultDonutChartView.swift in Sources */,
+				16843CF42C9AC570001AEF6E /* DefaultDonutChartView.swift in Sources */,
+				16843CF02C9A887C001AEF6E /* RootView.swift in Sources */,
+				16843D012C9AE6E7001AEF6E /* TabBottomView.swift in Sources */,
 				169FEB112C97BC330009AA91 /* ContentView.swift in Sources */,
 				169FEB222C97C0330009AA91 /* CardsView.swift in Sources */,
 				169FEB0F2C97BC330009AA91 /* Report_Asset_managementApp.swift in Sources */,
+				16843D032C9AE6E7001AEF6E /* TabItemView.swift in Sources */,
 				16843CE22C9A82B1001AEF6E /* AccoutType.swift in Sources */,
+				16843CF92C9ACEE4001AEF6E /* ContentView1.swift in Sources */,
 				169FEB312C97ED390009AA91 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

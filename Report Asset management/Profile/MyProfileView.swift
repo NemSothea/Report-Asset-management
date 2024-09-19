@@ -10,7 +10,7 @@ import SwiftUI
 struct MyProfileView: View {
     
     var body: some View {
-        Text("My asset report")
+        Text("Profle")
     }
 }
 
