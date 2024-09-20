@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct TabItemView: View {
-    let data: TabItemData
-    let isSelected: Bool
+    
+    let data            : TabItemData
+    let isSelected      : Bool
     
     var body: some View {
         VStack {

@@ -28,7 +28,7 @@ struct MenuView: View {
                         .padding(.horizontal)
                         .background(
                             RoundedRectangle(cornerRadius: 10)
-                                .fill(Color.tabBackground)
+                                .fill(.report)
                                 .shadow(radius: 5)
                         )
                     

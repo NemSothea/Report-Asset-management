@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AnnotatedCircleView: View {
     
-    let wineType    : AccoutType
+    let accountType : AccoutType
     var isSelected  : Bool = false
     
     var body: some View {
@@ -24,12 +24,12 @@ struct AnnotatedCircleView: View {
                         .fill(.white)
                         .overlay(
                             VStack(alignment: .center) {
-                                Text("\(wineType.name)")
+                                Text("\(accountType.name)")
                                     .foregroundStyle(.gray)
                                     .font(.caption)
                                     .multilineTextAlignment(.center)
                                 
-                                Text("\(wineType.reportRate) %")
+                                Text("\(accountType.reportRate) %")
                                     .foregroundStyle(.pink)
                                     .bold()
                             }
@@ -40,5 +40,5 @@ struct AnnotatedCircleView: View {
 }
 
 #Preview {
-    AnnotatedCircleView(wineType: AccoutType(name: "TOP-UP", reportRate: 1000, color: .topup, text: "TOP-UP", balance: 1000.0), isSelected: false)
+    AnnotatedCircleView(accountType: AccoutType(name: "TOP-UP", reportRate: 1000, color: .topup, text: "TOP-UP", balance: 1000.0), isSelected: true)
 }

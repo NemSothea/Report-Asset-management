@@ -58,7 +58,7 @@ struct AssetListView : View {
                 .padding()
                 .background(
                     RoundedRectangle(cornerRadius: 10)
-                        .fill(Color.white)
+                        .fill(Color.asset)
                         .shadow(color: .gray.opacity(0.2), radius: 5, x: 0, y: 5)
                 )
                 .padding(.horizontal)

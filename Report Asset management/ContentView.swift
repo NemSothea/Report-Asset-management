@@ -14,7 +14,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            
             Spacer()
+            
             CustomTabView(tabs: [
                 TabItemData(image: "calendar", selectedImage: "calendar", title: "Book Us"),
                 TabItemData(image: "creditcard", selectedImage: "creditcard.fill", title: "Cards"),

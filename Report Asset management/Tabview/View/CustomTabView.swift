@@ -7,9 +7,9 @@
 import SwiftUI
 
 struct CustomTabView<Content: View>: View {
-    let tabs: [TabItemData]
-    @Binding var selectedIndex: Int
-    @ViewBuilder let content: (Int) -> Content
+    let tabs                    : [TabItemData]
+    @Binding var selectedIndex  : Int
+    @ViewBuilder let content    : (Int) -> Content
 
     var body: some View {
         ZStack {

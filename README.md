@@ -22,3 +22,5 @@ Add images, strings, data files, and other resources to your projects, and manag
 2. https://developer.apple.com/documentation/xcode/asset-management
 
 3. https://www.youtube.com/watch?v=BWUY18wH4JQ&ab_channel=StewartLynch
+4. https://www.letsbuildthatapp.com/videos/7256
+5. https://github.com/khalid-asad/card-reader-ios

@@ -40,7 +40,7 @@ struct CustomDonutChartView: View {
                 .annotation(position: .overlay) {
                     let xCase: CGFloat = positionXY(value: wineType.color).0
                     let yCase: CGFloat = positionXY(value: wineType.color).1
-                    AnnotatedCircleView(wineType: wineType, isSelected: selectedWineType?.name == wineType.name)
+                    AnnotatedCircleView(accountType: wineType, isSelected: selectedWineType?.name == wineType.name)
                         .offset(x: xCase, y: yCase)
                     
                 }
