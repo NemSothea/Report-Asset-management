@@ -15,7 +15,6 @@ struct HeaderView: View {
                 Image(systemName: "person.circle")
                     .resizable()
                     .frame(width: 79,height: 79)
-                    .padding()
                 VStack(alignment:.leading,spacing: -5) {
                     Text("My Asset Status")
                         .font(.title)

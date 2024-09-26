@@ -45,15 +45,18 @@ struct ProfileModel : Identifiable {
 struct MyProfileView: View {
     
     let profile  = ProfileModel.all
-   
+    
     var body: some View {
         
         VStack {
             if let profile = profile.first {
+                
                 HeaderProfileView(header: profile)
+                
+                ExchangeView(exchangeRate: profile.exchangeRate)
                 ListProfileView(settingList: profile.setting)
             }
-          
+            
         }
     }
 }
@@ -77,6 +80,44 @@ struct ListProfileView : View {
     }
 }
 
+struct ExchangeView : View {
+    
+    let exchangeRate    : Float
+    
+    var body: some View {
+        HStack {
+            VStack(alignment:.leading,spacing: 10) {
+                Spacer()
+                Text("Exchange Rate ")
+                    .font(.caption)
+                    .foregroundStyle(.text)
+                HStack {
+                    Text("1")
+                        .foregroundStyle(.text)
+                        .fontWeight(.bold)
+                        
+                    Text("USD =")
+                        .foregroundStyle(.text)
+                    Text("\(String(format: "%.2f",exchangeRate))")
+                        .font(.title)
+                        .foregroundStyle(.text)
+                        .fontWeight(.bold)
+                    Text("KHR")
+                        .font(.title)
+                        .foregroundStyle(.text)
+                }
+               
+                Spacer()
+            }
+            .padding(.leading,30)
+            Spacer()
+        }
+       
+        .background(.exchange)
+        .frame(width: UIScreen.main.bounds.width - 50,height: 130)
+        .cornerRadius(20.0)
+    }
+}
 
 
 struct HeaderProfileView : View {
@@ -111,37 +152,7 @@ struct HeaderProfileView : View {
                  }
             }
             
-            HStack {
-                VStack(alignment:.leading,spacing: 10) {
-                    Spacer()
-                    Text("Exchange Rate ")
-                        .font(.caption)
-                        .foregroundStyle(.text)
-                    HStack {
-                        Text("1")
-                            .foregroundStyle(.text)
-                            .fontWeight(.bold)
-                            
-                        Text("USD =")
-                            .foregroundStyle(.text)
-                             Text("\(String(format: "%.2f",header?.exchangeRate ?? 0.0))")
-                            .font(.title)
-                            .foregroundStyle(.text)
-                            .fontWeight(.bold)
-                        Text("KHR")
-                            .font(.title)
-                            .foregroundStyle(.text)
-                    }
-                   
-                    Spacer()
-                }
-                .padding(.leading,30)
-                Spacer()
-            }
            
-            .background(.exchange)
-            .frame(width: UIScreen.main.bounds.width - 50,height: 130)
-            .cornerRadius(20.0)
         }
 
     }

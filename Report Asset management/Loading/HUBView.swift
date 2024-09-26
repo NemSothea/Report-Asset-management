@@ -67,7 +67,7 @@ extension HUBView {
     @ViewBuilder
     private func dotViewScaling() -> some View {
         RoundedRectangle(cornerRadius: 15.0)
-            .fill(.exchange)
+            .fill(.tabBackground)
             .frame(width: 100,height: 100)
             .overlay {
                 HStack {
@@ -105,7 +105,7 @@ extension HUBView {
     @ViewBuilder
     private func linesViewScaling() -> some View {
         RoundedRectangle(cornerRadius: 15.0)
-            .fill(.exchange)
+            .fill(.tabBackground)
             .frame(width: 100,height: 100)
             .overlay {
                 HStack {
