@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct profileModel : Identifiable {
+struct ProfileModel : Identifiable {
     
     let     id          = UUID()
     let name            : String
@@ -24,7 +24,7 @@ struct profileModel : Identifiable {
         let settingColor       : Color
     }
     
-    static var all: [profileModel] {
+    static var all: [ProfileModel] {
         [
             .init(name: "Sen Sina", img: "person.circle", loginInfo: "19022024105450", exchangeRate: 4063.70, setting: [
                 Setting(settingimg: "gear.circle.fill", settingTitle: "Settings", settingColor: .gray),
@@ -44,7 +44,7 @@ struct profileModel : Identifiable {
 
 struct MyProfileView: View {
     
-    let profile  = profileModel.all
+    let profile  = ProfileModel.all
    
     var body: some View {
         
@@ -59,7 +59,7 @@ struct MyProfileView: View {
 }
 struct ListProfileView : View {
    
-    let settingList : [profileModel.Setting]
+    let settingList : [ProfileModel.Setting]
     
     var body: some View {
         
@@ -81,7 +81,7 @@ struct ListProfileView : View {
 
 struct HeaderProfileView : View {
     
-    let header : profileModel?
+    let header : ProfileModel?
     
     var body: some View {
        

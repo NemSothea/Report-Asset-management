@@ -7,26 +7,36 @@
 
 import SwiftUI
 
-struct BookUsView: View {
+struct BookUsiPadView: View {
     
     @State private var date = Date()
     
     var body: some View {
-        NavigationView {
-            ZStack {
+        NavigationSplitView {
+            VStack {
                 DatePicker(
-                        "Start Date",
-                        selection: $date,
-                        displayedComponents: [.date]
-                    )
-                    .datePickerStyle(.graphical)
-                    .padding()
+                    "Start Date",
+                    selection: $date,
+                    displayedComponents: [.date]
+                )
+                .datePickerStyle(.graphical)
+                .padding()
             }
-            .offset(y:-120)
+            Spacer()
             .navigationTitle("Book Us")
-            .navigationBarItems(trailing: addCardButton)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    addCardButton
+                }
+            }
+            
+        } detail: {
+            Text("Select a date to view details")
+                .font(.title)
+                .foregroundColor(.secondary)
         }
-
+        
+      
     }
     
     var addCardButton: some View {
@@ -44,5 +54,5 @@ struct BookUsView: View {
 }
 
 #Preview {
-    BookUsView()
+    BookUsiPadView()
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TabBottomView: View {
+struct TabBottomiPadView: View {
     
     @State private var isShowingSheet = false
     @State private var cardDetails : CardDetails? = nil
@@ -43,7 +43,7 @@ struct TabBottomView: View {
                     .cornerRadius(UIScreen.main.bounds.width / 2)
                     .shadow(radius: 5, x: 5, y: 0)
                     .zIndex(1.0)
-                    .offset(y:UIScreen.main.bounds.width / 2 - 115)
+                    .offset(y:50)
                     .padding()
                 
                 HStack {
@@ -88,7 +88,7 @@ struct TabBottomView: View {
   
     @State var selectedIndexX: Int = 0 // Declare as @State
        
-       return TabBottomView(tabbarItems: [
+       return TabBottomiPadView(tabbarItems: [
            TabItemData(image: "calendar", selectedImage: "calendar.circle.fill", title: "Book Us"),
            TabItemData(image: "creditcard", selectedImage: "creditcard.fill", title: "Cards"),
            TabItemData(image: "", selectedImage: "", title: ""),TabItemData(image: "", selectedImage: "", title: ""),

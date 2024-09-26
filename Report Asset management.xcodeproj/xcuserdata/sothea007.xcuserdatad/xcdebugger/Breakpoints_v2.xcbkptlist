@@ -3,4 +3,130 @@
    uuid = "D4E09331-A753-47B1-9590-033DD9C674A7"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5AB8B2AC-2CE4-4734-AE45-4322C086F5C5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Report Asset management/Cards/Enum/CardType.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "init(number:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2032A130-8F6E-4163-AD62-A81CF6F4C0F9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Report Asset management/Cards/Enum/CardType.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "image"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2068CD6-D270-445D-95B8-87FFFABF67E6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Report Asset management/Tabview/CardReader/CardReaderView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "validateImage(image:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51056DD5-71D6-40DB-9C1E-B5CC1C1C5596"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Report Asset management/Tabview/CardReader/CardReaderView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "documentCameraViewController(_:didFinishWith:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C43B6335-BB18-40CB-810A-64896B3591F9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Report Asset management/Tabview/CardReader/CardReaderView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "CardReaderView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "C43B6335-BB18-40CB-810A-64896B3591F9 - 6d22c57cc8fdc3f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Report_Asset_management.CardReaderView.Coordinator.__allocating_init() -&gt; Report_Asset_management.CardReaderView.Coordinator"
+                  moduleName = "Report Asset management"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sothea007/Documents/Report%20Asset%20management/Report%20Asset%20management/Tabview/CardReader/CardReaderView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "C43B6335-BB18-40CB-810A-64896B3591F9 - bcd50f6cd119894"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Report_Asset_management.CardReaderView.Coordinator.init() -&gt; Report_Asset_management.CardReaderView.Coordinator"
+                  moduleName = "Report Asset management"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sothea007/Documents/Report%20Asset%20management/Report%20Asset%20management/Tabview/CardReader/CardReaderView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109">
+               </Location>
+               <Location
+                  uuid = "C43B6335-BB18-40CB-810A-64896B3591F9 - e2c18b01426b50d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Report_Asset_management.CardReaderView.Coordinator.__deallocating_deinit"
+                  moduleName = "Report Asset management"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sothea007/Documents/Report%20Asset%20management/Report%20Asset%20management/Tabview/CardReader/CardReaderView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
