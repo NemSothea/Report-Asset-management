@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16366C992CAFA1EA00C69D48 /* BarMarkChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16366C982CAFA1EA00C69D48 /* BarMarkChartView.swift */; };
 		16667A642CA11F3400968E0E /* AddCardFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16667A632CA11F3400968E0E /* AddCardFormView.swift */; };
 		16667A662CA140A100968E0E /* CardFormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16667A652CA140A100968E0E /* CardFormFieldView.swift */; };
-		16843CE22C9A82B1001AEF6E /* AccoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CE12C9A82B1001AEF6E /* AccoutType.swift */; };
+		16843CE22C9A82B1001AEF6E /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CE12C9A82B1001AEF6E /* AccountType.swift */; };
 		16843CE42C9A836C001AEF6E /* AnnotatedCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CE32C9A836C001AEF6E /* AnnotatedCircleView.swift */; };
 		16843CE72C9A8437001AEF6E /* CustomDonutChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CE62C9A8437001AEF6E /* CustomDonutChartView.swift */; };
 		16843CE92C9A84AE001AEF6E /* AssetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CE82C9A84AE001AEF6E /* AssetListView.swift */; };
@@ -21,6 +22,7 @@
 		16843D012C9AE6E7001AEF6E /* TabBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CFC2C9AE6E7001AEF6E /* TabBottomView.swift */; };
 		16843D022C9AE6E7001AEF6E /* TabItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CFD2C9AE6E7001AEF6E /* TabItemData.swift */; };
 		16843D032C9AE6E7001AEF6E /* TabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16843CFE2C9AE6E7001AEF6E /* TabItemView.swift */; };
+		1696BD802CA657F5006288A3 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1696BD7F2CA657F5006288A3 /* ProfileModel.swift */; };
 		169FEB0F2C97BC330009AA91 /* Report_Asset_managementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FEB0E2C97BC330009AA91 /* Report_Asset_managementApp.swift */; };
 		169FEB112C97BC330009AA91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169FEB102C97BC330009AA91 /* ContentView.swift */; };
 		169FEB132C97BC340009AA91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169FEB122C97BC340009AA91 /* Assets.xcassets */; };
@@ -43,12 +45,14 @@
 		16DDBAA02C9D2E5800F890CF /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DDBA9F2C9D2E5800F890CF /* CardType.swift */; };
 		16DDBAA32C9D3E5B00F890CF /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DDBAA22C9D3E5B00F890CF /* CardModel.swift */; };
 		16DDBAA62C9D6FD600F890CF /* CardReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DDBAA52C9D6FD600F890CF /* CardReaderView.swift */; };
+		16F53BF62CB3940D00B92920 /* lineMarkChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F53BF52CB3940D00B92920 /* lineMarkChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16366C982CAFA1EA00C69D48 /* BarMarkChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarMarkChartView.swift; sourceTree = "<group>"; };
 		16667A632CA11F3400968E0E /* AddCardFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardFormView.swift; sourceTree = "<group>"; };
 		16667A652CA140A100968E0E /* CardFormFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFormFieldView.swift; sourceTree = "<group>"; };
-		16843CE12C9A82B1001AEF6E /* AccoutType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccoutType.swift; sourceTree = "<group>"; };
+		16843CE12C9A82B1001AEF6E /* AccountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountType.swift; sourceTree = "<group>"; };
 		16843CE32C9A836C001AEF6E /* AnnotatedCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotatedCircleView.swift; sourceTree = "<group>"; };
 		16843CE62C9A8437001AEF6E /* CustomDonutChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDonutChartView.swift; sourceTree = "<group>"; };
 		16843CE82C9A84AE001AEF6E /* AssetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListView.swift; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 		16843CFC2C9AE6E7001AEF6E /* TabBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBottomView.swift; sourceTree = "<group>"; };
 		16843CFD2C9AE6E7001AEF6E /* TabItemData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemData.swift; sourceTree = "<group>"; };
 		16843CFE2C9AE6E7001AEF6E /* TabItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
+		1696BD7F2CA657F5006288A3 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		169FEB0B2C97BC330009AA91 /* Report Asset management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Report Asset management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		169FEB0E2C97BC330009AA91 /* Report_Asset_managementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report_Asset_managementApp.swift; sourceTree = "<group>"; };
 		169FEB102C97BC330009AA91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +88,7 @@
 		16DDBA9F2C9D2E5800F890CF /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
 		16DDBAA22C9D3E5B00F890CF /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		16DDBAA52C9D6FD600F890CF /* CardReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderView.swift; sourceTree = "<group>"; };
+		16F53BF52CB3940D00B92920 /* lineMarkChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lineMarkChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,7 @@
 		16843CDF2C9A8262001AEF6E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				16843CE12C9A82B1001AEF6E /* AccoutType.swift */,
+				16843CE12C9A82B1001AEF6E /* AccountType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,6 +140,14 @@
 				16843CFE2C9AE6E7001AEF6E /* TabItemView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1696BD7E2CA657E4006288A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1696BD7F2CA657F5006288A3 /* ProfileModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		169FEB022C97BC330009AA91 = {
@@ -200,6 +214,7 @@
 		169FEB282C97D4310009AA91 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				1696BD7E2CA657E4006288A3 /* Model */,
 				169FEB232C97CF2D0009AA91 /* MyProfileView.swift */,
 			);
 			path = Profile;
@@ -284,6 +299,8 @@
 				169FEB342C9834110009AA91 /* DonutChartSortedView.swift */,
 				169FEB322C97ED900009AA91 /* PieChartView.swift */,
 				16843CF12C9AB23C001AEF6E /* DefaultBackgroundDonutChartView.swift */,
+				16366C982CAFA1EA00C69D48 /* BarMarkChartView.swift */,
+				16F53BF52CB3940D00B92920 /* lineMarkChartView.swift */,
 				16843CF32C9AC570001AEF6E /* DefaultDonutChartView.swift */,
 				16843CEF2C9A887C001AEF6E /* RootView.swift */,
 				16843CF82C9ACEE4001AEF6E /* ContentView1.swift */,
@@ -366,6 +383,7 @@
 				16BEE7D82CA3E17900BF8CF4 /* HUBView.swift in Sources */,
 				16843D022C9AE6E7001AEF6E /* TabItemData.swift in Sources */,
 				169FEB332C97ED900009AA91 /* PieChartView.swift in Sources */,
+				1696BD802CA657F5006288A3 /* ProfileModel.swift in Sources */,
 				16DDBA9B2C9D2D6F00F890CF /* Color.swift in Sources */,
 				169FEB242C97CF2D0009AA91 /* MyProfileView.swift in Sources */,
 				16DDBAA32C9D3E5B00F890CF /* CardModel.swift in Sources */,
@@ -386,10 +404,12 @@
 				16843CF02C9A887C001AEF6E /* RootView.swift in Sources */,
 				16843D012C9AE6E7001AEF6E /* TabBottomView.swift in Sources */,
 				169FEB112C97BC330009AA91 /* ContentView.swift in Sources */,
+				16366C992CAFA1EA00C69D48 /* BarMarkChartView.swift in Sources */,
 				169FEB222C97C0330009AA91 /* CardsView.swift in Sources */,
 				169FEB0F2C97BC330009AA91 /* Report_Asset_managementApp.swift in Sources */,
 				16843D032C9AE6E7001AEF6E /* TabItemView.swift in Sources */,
-				16843CE22C9A82B1001AEF6E /* AccoutType.swift in Sources */,
+				16F53BF62CB3940D00B92920 /* lineMarkChartView.swift in Sources */,
+				16843CE22C9A82B1001AEF6E /* AccountType.swift in Sources */,
 				16843CF92C9ACEE4001AEF6E /* ContentView1.swift in Sources */,
 				16DDBAA02C9D2E5800F890CF /* CardType.swift in Sources */,
 				169FEB312C97ED390009AA91 /* HeaderView.swift in Sources */,

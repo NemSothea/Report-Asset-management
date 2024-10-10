@@ -91,7 +91,7 @@ struct TabBottomiPadView: View {
        return TabBottomiPadView(tabbarItems: [
            TabItemData(image: "calendar", selectedImage: "calendar.circle.fill", title: "Book Us"),
            TabItemData(image: "creditcard", selectedImage: "creditcard.fill", title: "Cards"),
-           TabItemData(image: "", selectedImage: "", title: ""),TabItemData(image: "", selectedImage: "", title: ""),
+           TabItemData(image: nil, selectedImage: nil, title: ""),TabItemData(image: nil, selectedImage: nil, title: ""),
            TabItemData(image: "person.crop.circle", selectedImage: "person.crop.circle.fill", title: "Profile"),
            TabItemData(image: "list.dash", selectedImage: "list.dash.header.rectangle", title: "Menu")
        ], height: 100, width: UIScreen.main.bounds.width - 5, selectedIndex: $selectedIndexX)

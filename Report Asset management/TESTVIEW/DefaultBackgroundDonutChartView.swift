@@ -12,13 +12,13 @@ import Charts
 // Donut chart view
 struct DefaultBackgroundDonutChartView: View {
     
-    var accountTypes                        = AccoutType.all
+    var accountTypes                        = AccountType.all
     @State private var selectedCount        : Int?
-    @State private var selectedAccountType : AccoutType?
+    @State private var selectedAccountType : AccountType?
     
     @State private var animationProgress    : CGFloat = 0
     
-    let sortAccountTypes  = AccoutType.all.sorted { $0.reportRate > $1.reportRate }
+    let sortAccountTypes  = AccountType.all.sorted { $0.reportRate > $1.reportRate }
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -28,17 +28,17 @@ struct DefaultBackgroundDonutChartView: View {
                 .padding(.top)
             
             // Donut Chart
-            Chart(accountTypes) { wineType in
+            Chart(accountTypes) {
                 SectorMark(
-                    angle: .value("reportRate",  wineType.reportRate * Int(animationProgress)),
+                    angle: .value("reportRate",  $0.reportRate * Int(animationProgress)),
                     innerRadius: .ratio(0.6),
-                    outerRadius: MarkDimension(floatLiteral: getOuterRadius(for: wineType))
+                    outerRadius: MarkDimension(floatLiteral: getOuterRadius(for: $0))
                 )
                
-                .foregroundStyle(wineType.color)
+                .foregroundStyle($0.color)
                 
             }
-            .frame(width: 350,height: 350)
+            .frame(height: 350)
             .offset(y: -30.0)
             .chartAngleSelection(value: $selectedCount)
             
@@ -111,7 +111,7 @@ struct DefaultBackgroundDonutChartView: View {
     
    
     // Function to calculate the outer radius
-    private func getOuterRadius(for wineType: AccoutType) -> CGFloat {
+    private func getOuterRadius(for wineType: AccountType) -> CGFloat {
         let baseRadius: CGFloat     = 130
         let selectedRadius: CGFloat = 140
         

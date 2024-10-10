@@ -12,13 +12,13 @@ import Charts
 // Donut chart view
 struct DefaultDonutChartView: View {
     
-    var accountTypes                        = AccoutType.all
+    var accountTypes                        = AccountType.all
     @State private var selectedCount        : Int?
-    @State private var selectedAccountType : AccoutType?
+    @State private var selectedAccountType : AccountType?
     
     @State private var animationProgress    : CGFloat = 0
     
-    let sortAccountTypes  = AccoutType.all.sorted { $0.reportRate > $1.reportRate }
+    let sortAccountTypes  = AccountType.all.sorted { $0.reportRate > $1.reportRate }
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -28,18 +28,18 @@ struct DefaultDonutChartView: View {
                 .padding(.top)
             
             // Donut Chart
-            Chart(accountTypes) { wineType in
+            Chart(accountTypes) { accountType in
                 SectorMark(
-                    angle: .value("reportRate",  wineType.reportRate * Int(animationProgress)),
+                    angle: .value("reportRate",  accountType.reportRate * Int(animationProgress)),
                     innerRadius: .ratio(0.5),
-                    outerRadius: MarkDimension(floatLiteral: getOuterRadius(for: wineType)),
+                    outerRadius: MarkDimension(floatLiteral: getOuterRadius(for: accountType)),
                     angularInset: 0.2
                 )
               
-                .foregroundStyle(wineType.color)
+                .foregroundStyle(accountType.color)
                 .cornerRadius(5)
                 .annotation(position: .overlay) {
-                    Text("\(wineType.reportRate) %")
+                    Text("\(accountType.reportRate) %")
                         .bold()
                         .foregroundStyle(.text)
                 }
@@ -66,7 +66,6 @@ struct DefaultDonutChartView: View {
                 selectedAccountType = nil
             }
             // Legend for the donut chart
-           
             List(sortAccountTypes) { item in
                 HStack {
                     Circle()
@@ -91,11 +90,11 @@ struct DefaultDonutChartView: View {
     
    
     // Function to calculate the outer radius
-    private func getOuterRadius(for wineType: AccoutType) -> CGFloat {
+    private func getOuterRadius(for account: AccountType) -> CGFloat {
         let baseRadius: CGFloat     = 130
         let selectedRadius: CGFloat = 140
         
-        if selectedAccountType?.name == wineType.name {
+        if selectedAccountType?.name == account.name {
             return selectedRadius
         } else {
             return baseRadius

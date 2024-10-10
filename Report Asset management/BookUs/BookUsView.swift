@@ -23,6 +23,7 @@ struct BookUsView: View {
                     .padding()
             }
             .offset(y:-120)
+            .frame(maxWidth: .infinity,maxHeight: .infinity)
             .navigationTitle("Book Us")
             .navigationBarItems(trailing: addCardButton)
         }

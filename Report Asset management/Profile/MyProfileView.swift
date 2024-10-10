@@ -7,84 +7,94 @@
 
 import SwiftUI
 
-struct ProfileModel : Identifiable {
-    
-    let     id          = UUID()
-    let name            : String
-    let img             : String
-    let loginInfo       : String
-    let exchangeRate    : Float
-    
-    let setting         : [Setting]
-    
-    struct Setting : Identifiable  {
-        let     id             = UUID()
-        let settingimg         : String
-        let settingTitle       : String
-        let settingColor       : Color
-    }
-    
-    static var all: [ProfileModel] {
-        [
-            .init(name: "Sen Sina", img: "person.circle", loginInfo: "19022024105450", exchangeRate: 4063.70, setting: [
-                Setting(settingimg: "gear.circle.fill", settingTitle: "Settings", settingColor: .gray),
-                Setting(settingimg: "checkmark.shield.fill", settingTitle: "Security", settingColor: .blue),
-                Setting(settingimg: "newspaper", settingTitle: "News/Event", settingColor: .purple),
-                Setting(settingimg: "mappin.and.ellipse.circle.fill", settingTitle: "Find Branch & ATM/CDM", settingColor: .pink),
-                Setting(settingimg: "ellipsis.circle.fill", settingTitle: "More Products", settingColor: .yellow),
-                Setting(settingimg: "dollarsign.circle.fill", settingTitle: "Apply Loads", settingColor: .blue),
-                Setting(settingimg: "australiandollarsign.circle.fill", settingTitle: "Exchage Rate", settingColor: .red),
-                Setting(settingimg: "mail.stack.fill", settingTitle: "Contact Us", settingColor: .green),
-            ])
-            
-        ]
-    }
-    
-}
-
 struct MyProfileView: View {
     
-    let profile  = ProfileModel.all
+    //MARK: - Properties
+    let profile     = ProfileModel.all
+  
     
+    // MARK: -  Content
     var body: some View {
         
-        VStack {
-            if let profile = profile.first {
+        NavigationView {
+          
+            VStack {
+                if let profile = profile.first {
+                  
+                    // HeaderProfileView
+                    headerProfileView(header: profile)
+                  
+                        // ExchangeView
+                        exchangeView(exchangeRate: profile.exchangeRate)
+                        
+                        // ListProfileView
+                        listProfileView(listProfile: profile.setting)
+                    }
+                      
+
                 
-                HeaderProfileView(header: profile)
-                
-                ExchangeView(exchangeRate: profile.exchangeRate)
-                ListProfileView(settingList: profile.setting)
+                   
             }
-            
+            .edgesIgnoringSafeArea(.all)
         }
+        
+    }
+    
+    // Function to format date string
+    func formatDateString(_ dateString: String) -> String? {
+        
+        let inputFormatter = DateFormatter()
+        inputFormatter.dateFormat = "ddMMyyyyHHmmss"  // Expecting date in this format
+        
+        if let date = inputFormatter.date(from: dateString) {
+            let outputFormatter = DateFormatter()
+            outputFormatter.dateFormat = "dd/MMM/yyyy HH:mm"
+            outputFormatter.locale = Locale(identifier: "en_US_POSIX")
+            return outputFormatter.string(from: date)
+        }
+        
+        return nil // Return nil if the string can't be formatted
     }
 }
-struct ListProfileView : View {
-   
-    let settingList : [ProfileModel.Setting]
-    
-    var body: some View {
-        
-        List(settingList) { item in
-            HStack {
-                Image(systemName: item.settingimg)
+// MARK: - HeaderProfileView
+extension MyProfileView {
+    @ViewBuilder
+    private func headerProfileView(header : ProfileModel?) -> some View {
+        VStack {
+            VStack {
+                
+                Image(systemName: header?.img ?? "")
                     .resizable()
-                    .frame(width: 25,height: 25)
-                    .foregroundColor(item.settingColor)
-                Text(" \(item.settingTitle)")
-                    .font(.headline)
+                    .frame(width: 69,height: 69)
+                HStack {
+                    Text("\(header?.name ?? "")".uppercased())
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Button {
+                        
+                    } label : {
+                        Image(systemName: "arrow.clockwise")
+                            .fontWeight(.bold)
+                            .foregroundColor(.black)
+                    }
+                    
+                }
+                if let info = formatDateString(header?.loginInfo ?? "") {
+                                  Text("Recent Login \(info)")
+                                      .font(.caption)
+                                      .padding(.bottom, 10)
+                 }
             }
-            .padding(10)
         }
     }
+    
 }
 
-struct ExchangeView : View {
+// MARK: - ExchangeView
+extension MyProfileView {
     
-    let exchangeRate    : Float
-    
-    var body: some View {
+    @ViewBuilder
+    private func exchangeView(exchangeRate : Float ) -> some View {
         HStack {
             VStack(alignment:.leading,spacing: 10) {
                 Spacer()
@@ -116,60 +126,35 @@ struct ExchangeView : View {
         .background(.exchange)
         .frame(width: UIScreen.main.bounds.width - 50,height: 130)
         .cornerRadius(20.0)
+
     }
 }
 
 
-struct HeaderProfileView : View {
+// MARK: - ListProfileView
+extension MyProfileView {
     
-    let header : ProfileModel?
-    
-    var body: some View {
-       
-        VStack {
-            VStack {
-                
-                Image(systemName: header?.img ?? "")
-                    .resizable()
-                    .frame(width: 69,height: 69)
+    @ViewBuilder
+    private func listProfileView(listProfile : [ProfileModel.Setting]) -> some View {
+      
+            List(listProfile) { item in
                 HStack {
-                    Text("\(header?.name ?? "")".uppercased())
-                        .font(.title)
-                        .fontWeight(.bold)
-                    Button {
-                        
-                    } label : {
-                        Image(systemName: "arrow.clockwise")
-                            .fontWeight(.bold)
-                            .foregroundColor(.black)
-                    }
-                    
+                    Image(systemName: item.settingimg)
+                        .resizable()
+                        .frame(width: 25,height: 25)
+                        .foregroundColor(item.settingColor)
+                    Text(" \(item.settingTitle)")
+                        .font(.headline)
                 }
-                if let info = formatDateString(header?.loginInfo ?? "") {
-                                  Text("Recent Login \(info)")
-                                      .font(.caption)
-                                      .padding(.bottom, 10)
-                 }
+                .padding(10)
+                // If you need navigation, wrap content with NavigationLink
+                            .contentShape(Rectangle()) // Ensure the entire row is tappable
+                            .onTapGesture {
+                                // Handle tap
+                            }
             }
-            
-           
-        }
-
-    }
-    // Function to format date string
-    func formatDateString(_ dateString: String) -> String? {
+            .listStyle(PlainListStyle())
         
-        let inputFormatter = DateFormatter()
-        inputFormatter.dateFormat = "ddMMyyyyHHmmss"  // Expecting date in this format
-        
-        if let date = inputFormatter.date(from: dateString) {
-            let outputFormatter = DateFormatter()
-            outputFormatter.dateFormat = "dd/MMM/yyyy HH:mm"
-            outputFormatter.locale = Locale(identifier: "en_US_POSIX")
-            return outputFormatter.string(from: date)
-        }
-        
-        return nil // Return nil if the string can't be formatted
     }
 }
 

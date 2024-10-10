@@ -19,8 +19,8 @@ struct TabItemView: View {
                 .font(.system(size: 20))
                 .foregroundColor(isSelected ? .black : .gray)
                 .onAppear{
-                    withAnimation(.default){
-                       
+                    withAnimation(.easeInOut){
+                        
                     }
                 }
             

@@ -24,3 +24,6 @@ Add images, strings, data files, and other resources to your projects, and manag
 3. https://www.youtube.com/watch?v=BWUY18wH4JQ&ab_channel=StewartLynch
 4. https://www.letsbuildthatapp.com/videos/7256
 5. https://github.com/khalid-asad/card-reader-ios
+6. https://www.swiftyplace.com/blog/swiftcharts-create-charts-and-graphs-in-swiftui
+
+https://www.youtube.com/watch?v=REic9VWvmDA&ab_channel=%EC%98%A4%EB%8F%84%EC%94%A8%28ODOSSI%29

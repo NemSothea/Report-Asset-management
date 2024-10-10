@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AnnotatedCircleView: View {
     
-    let accountType : AccoutType
+    let accountType : AccountType
     var isSelected  : Bool = false
     
     var body: some View {
@@ -40,5 +40,5 @@ struct AnnotatedCircleView: View {
 }
 
 #Preview {
-    AnnotatedCircleView(accountType: AccoutType(name: "TOP-UP", reportRate: 1000, color: .topup, text: "TOP-UP", balance: 1000.0), isSelected: true)
+    AnnotatedCircleView(accountType: AccountType(name: "TOP-UP", reportRate: 1000, color: .topup, text: "TOP-UP", balance: 1000.0, year: 2023), isSelected: true)
 }

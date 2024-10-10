@@ -24,7 +24,7 @@ struct CustomTabView<Content: View>: View {
             VStack {
                 Spacer()
                 if UIDevice.current.userInterfaceIdiom == .mac {
-                  // Will appy latter
+                  // Will apply latter
                 }else if UIDevice.current.userInterfaceIdiom == .pad {
                     TabBottomiPadView(tabbarItems: tabs, selectedIndex: $selectedIndex)
                 }else {

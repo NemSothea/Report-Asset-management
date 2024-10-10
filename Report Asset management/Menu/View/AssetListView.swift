@@ -10,7 +10,7 @@ import SwiftUI
 // Asset list view
 struct AssetListView : View {
     
-    let assetItems = AccoutType.all
+    let assetItems = AccountType.all
     
     var body: some View {
         VStack(alignment: .leading) {

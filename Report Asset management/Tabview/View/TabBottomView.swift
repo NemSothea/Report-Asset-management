@@ -12,6 +12,9 @@ struct TabBottomView: View {
     @State private var isShowingSheet = false
     @State private var cardDetails : CardDetails? = nil
     
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+        @Environment(\.verticalSizeClass) var verticalSizeClas
+    
     let tabbarItems             : [TabItemData]
     var height                  : CGFloat = 100
     var width                   : CGFloat = UIScreen.main.bounds.width - 5
@@ -25,7 +28,6 @@ struct TabBottomView: View {
        
         
         VStack(alignment: .center) {
-       
             VStack {
                 VStack {
                 Button {
@@ -43,7 +45,7 @@ struct TabBottomView: View {
                     .cornerRadius(UIScreen.main.bounds.width / 2)
                     .shadow(radius: 5, x: 5, y: 0)
                     .zIndex(1.0)
-                    .offset(y:UIScreen.main.bounds.width / 2 - 115)
+                    .offset(y: horizontalSizeClass == .compact && verticalSizeClas == .regular ? (UIScreen.main.bounds.width / 2 - 115) : 50)
                     .padding()
                 
                 HStack {
@@ -71,7 +73,7 @@ struct TabBottomView: View {
         }
         .sheet(isPresented: $isShowingSheet) {
             CardReaderView() { cardDetails in
-                    print(cardDetails ?? "")
+                 
                 if let details = cardDetails {
                     self.cardDetails = details // Store card details
                     isShowingSheet = false // Close the sheet after scanning
@@ -86,12 +88,12 @@ struct TabBottomView: View {
 }
 #Preview {
   
-    @State var selectedIndexX: Int = 0 // Declare as @State
+    @Previewable @State var selectedIndexX: Int = 0 // Declare as @State
        
        return TabBottomView(tabbarItems: [
            TabItemData(image: "calendar", selectedImage: "calendar.circle.fill", title: "Book Us"),
            TabItemData(image: "creditcard", selectedImage: "creditcard.fill", title: "Cards"),
-           TabItemData(image: "", selectedImage: "", title: ""),TabItemData(image: "", selectedImage: "", title: ""),
+           TabItemData(image: nil, selectedImage: "", title: ""),TabItemData(image: nil, selectedImage: nil, title: ""),
            TabItemData(image: "person.crop.circle", selectedImage: "person.crop.circle.fill", title: "Profile"),
            TabItemData(image: "list.dash", selectedImage: "list.dash.header.rectangle", title: "Menu")
        ], height: 100, width: UIScreen.main.bounds.width - 5, selectedIndex: $selectedIndexX)

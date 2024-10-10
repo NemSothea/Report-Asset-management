@@ -12,12 +12,12 @@ import Charts
 // Donut chart view
 struct CustomDonutChartView: View {
     
-    var accountTypes                       = AccoutType.all
+    var accountTypes                       = AccountType.all
     @State private var selectedCount    : Int?
-    @State private var selectedWineType : AccoutType?
+    @State private var selectedWineType : AccountType?
     
     @State private var animationProgress: CGFloat = 0
-    let sortAccountTypes  = AccoutType.all.sorted { $0.reportRate > $1.reportRate }
+    let sortAccountTypes  = AccountType.all.sorted { $0.reportRate > $1.reportRate }
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -100,7 +100,7 @@ struct CustomDonutChartView: View {
         }
     }
     // Function to calculate the outer radius
-    private func getOuterRadius(for wineType: AccoutType) -> CGFloat {
+    private func getOuterRadius(for wineType: AccountType) -> CGFloat {
         let baseRadius: CGFloat     = 130
         let selectedRadius: CGFloat = 140
         
