@@ -26,8 +26,8 @@ struct ContentView: View {
                     CustomTabView(tabs: [
                         TabItemData(image: "calendar", selectedImage: "calendar", title: "Book Us"),
                         TabItemData(image: "creditcard", selectedImage: "creditcard.fill", title: "Cards"),
-                        TabItemData(image: "", selectedImage: nil, title: nil),
-                        TabItemData(image: "", selectedImage: nil, title: nil),
+                        TabItemData(image: nil, selectedImage: nil, title: nil),
+                        TabItemData(image: nil, selectedImage: nil, title: nil),
                         TabItemData(image: "person.crop.circle", selectedImage: "person.crop.circle.fill", title: "Profile"),
                         TabItemData(image: "list.dash", selectedImage: "list.dash", title: "Menu")
                     ], selectedIndex: $selectedTab) { index in

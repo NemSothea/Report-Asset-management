@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TabItemData{
+struct TabItemData {
     let image           : String?
     let selectedImage   : String?
     let title           : String?

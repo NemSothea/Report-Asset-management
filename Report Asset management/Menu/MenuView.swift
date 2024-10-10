@@ -15,12 +15,10 @@ struct MenuView: View {
         VStack(alignment:.leading,spacing: 10) {
             // Profile view
             HeaderView()
-            Text("Please selecte the chart type :")
-                .font(.headline)
-            // Segment
-            VStack(alignment:.center,spacing: 10) {
-                
-              
+           
+            VStack(alignment:.leading,spacing: 10) {
+                Text("Please selecte the chart type :")
+                    .font(.headline)
                 
                 Picker("Account Chart", selection: $favoriteColor) {
                     Text("01").tag(0)
@@ -30,6 +28,12 @@ struct MenuView: View {
                     Text("05").tag(4)
                 }
                 .pickerStyle(.segmented)
+            }
+            .padding()
+            // Segment
+            VStack(alignment:.leading,spacing: 10) {
+                
+               
                 
                 switch favoriteColor {
                 case 0:
@@ -45,6 +49,7 @@ struct MenuView: View {
                 }
                 
             }
+           
             
         }
     }
