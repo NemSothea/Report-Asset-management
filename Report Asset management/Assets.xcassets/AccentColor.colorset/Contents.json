@@ -5,6 +5,7 @@
         "platform" : "universal",
         "reference" : "systemCyanColor"
       },
+      "display-gamut" : "sRGB",
       "idiom" : "universal"
     },
     {
@@ -18,11 +19,37 @@
         "platform" : "tvos",
         "reference" : "systemPinkColor"
       },
+      "display-gamut" : "sRGB",
+      "idiom" : "universal"
+    },
+    {
+      "color" : {
+        "platform" : "universal",
+        "reference" : "systemCyanColor"
+      },
+      "display-gamut" : "display-P3",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "tvos",
+        "reference" : "systemPinkColor"
+      },
+      "display-gamut" : "display-P3",
       "idiom" : "universal"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "localizable" : true
   }
 }

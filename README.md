@@ -27,3 +27,5 @@ Add images, strings, data files, and other resources to your projects, and manag
 6. https://www.swiftyplace.com/blog/swiftcharts-create-charts-and-graphs-in-swiftui
 
 https://www.youtube.com/watch?v=REic9VWvmDA&ab_channel=%EC%98%A4%EB%8F%84%EC%94%A8%28ODOSSI%29
+
+https://developer.apple.com/tutorials/develop-in-swift/add-functionality-with-swift-testing

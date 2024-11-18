@@ -70,6 +70,6 @@ struct CardFormFieldView: View {
 }
 
 #Preview {
-    @State var text : String = "3039 3933 3939"
+    @Previewable @State var text : String = "3039 3933 3939"
     return CardFormFieldView(text: $text, fieldTitle: "text", isSecure: true, autocapitalizationType: .words, isCreditCardNumber: true, isExpiryDate: true)
 }

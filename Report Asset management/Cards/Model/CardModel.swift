@@ -13,6 +13,8 @@ class CardModel : ObservableObject, Identifiable,Hashable {
     static func == (lhs: CardModel, rhs: CardModel) -> Bool {
         lhs.id == rhs.id
     }
+    
+    
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
