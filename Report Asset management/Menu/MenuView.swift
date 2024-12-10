@@ -33,8 +33,6 @@ struct MenuView: View {
             // Segment
             VStack(alignment:.leading,spacing: 10) {
                 
-               
-                
                 switch favoriteColor {
                 case 0:
                     defaultChart01()
@@ -49,8 +47,6 @@ struct MenuView: View {
                 }
                 
             }
-           
-            
         }
     }
     // defaultChart01

@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selectedTab: Int = 0
-    @State private var isLoading: Bool = true  // Initially true to show loading
+    // Initially true to show loading
+    @State private var isLoading: Bool = true
 
     var body: some View {
         ZStack {

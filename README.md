@@ -25,7 +25,10 @@ Add images, strings, data files, and other resources to your projects, and manag
 4. https://www.letsbuildthatapp.com/videos/7256
 5. https://github.com/khalid-asad/card-reader-ios
 6. https://www.swiftyplace.com/blog/swiftcharts-create-charts-and-graphs-in-swiftui
+7. https://www.youtube.com/watch?v=REic9VWvmDA&ab_channel=%EC%98%A4%EB%8F%84%EC%94%A8%28ODOSSI%29
+8. https://developer.apple.com/tutorials/develop-in-swift/add-functionality-with-swift-testing
 
-https://www.youtube.com/watch?v=REic9VWvmDA&ab_channel=%EC%98%A4%EB%8F%84%EC%94%A8%28ODOSSI%29
+# Commit Emoji :
+1. https://gist.github.com/parmentf/035de27d6ed1dce0b36a
+2. https://gitmoji.dev/
 
-https://developer.apple.com/tutorials/develop-in-swift/add-functionality-with-swift-testing

@@ -11,11 +11,8 @@ struct MyProfileView: View {
     
     //MARK: - Properties
     let profile     = ProfileModel.all
-  
-    
     // MARK: -  Content
     var body: some View {
-        
         NavigationView {
           
             VStack {
@@ -30,14 +27,10 @@ struct MyProfileView: View {
                         // ListProfileView
                         listProfileView(listProfile: profile.setting)
                     }
-                      
-
-                
                    
             }
-            .edgesIgnoringSafeArea(.all)
+//            .edgesIgnoringSafeArea(.top)
         }
-        
     }
     
     // Function to format date string
