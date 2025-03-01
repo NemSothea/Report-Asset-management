@@ -115,6 +115,6 @@ struct DefaultDonutChartView: View {
 }
 
 
-#Preview {
-    DefaultDonutChartView()
-}
+//#Preview {
+//    DefaultDonutChartView()
+//}
